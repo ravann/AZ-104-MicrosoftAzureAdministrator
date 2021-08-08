@@ -1,3 +1,5 @@
+Get-AzResourceGroup -Name 'az104-07*' | Remove-AzResourceGroup -Force 
+
 $location = 'southeastasia'
 $rgName = 'az104-07-rg0'
 
