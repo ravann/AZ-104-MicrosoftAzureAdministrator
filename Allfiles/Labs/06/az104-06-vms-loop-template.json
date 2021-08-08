@@ -46,7 +46,7 @@
         "nsgNamestbc": "[createArray('az104-06-nsg01','az104-06-nsg2','az104-06-nsg3')]",
         "subnetName": "subnet",
         "subnetRefs": "[createArray(0,1,0,0)]",
-        "computeApiVersion": "2018-06-01",
+        "computeApiVersion": "2020-12-01",
         "networkApiVersion": "2018-08-01"
     },
     "resources": [
@@ -72,6 +72,7 @@
                         "provisionVmAgent": "true"
                     }
                 },
+                "priority" : "Spot",
                 "hardwareProfile": {
                     "vmSize": "[parameters('vmSize')]"
                 },
