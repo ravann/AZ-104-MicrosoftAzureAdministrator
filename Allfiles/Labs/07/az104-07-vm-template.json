@@ -32,7 +32,7 @@
     "subnetIpPrefix": "10.70.0.0/24", 
     "subnetName": "subnet0",
     "subnetRef": "[resourceId('Microsoft.Network/virtualNetworks/subnets', variables('virtualNetworkName'), variables('subnetName'))]",
-    "computeApiVersion": "2018-06-01",
+    "computeApiVersion": "2020-12-01",
     "networkApiVersion": "2018-08-01"
   },
     "resources": [
@@ -53,6 +53,7 @@
                         "provisionVmAgent": "true"
                     }
                 },
+                "priority": "Spot",
                 "hardwareProfile": {
                     "vmSize": "[parameters('vmSize')]"
                 },
