@@ -1,0 +1,12 @@
+New-AzResourceGroupDeployment `
+   -ResourceGroupName $rgName `
+   -TemplateFile $HOME/06/az104-06-vms-loop-template.json `
+   -TemplateParameterFile $HOME/06/az104-06-vms-loop-parameters.json `
+   -WhatIf
+
+New-AzResourceGroupDeployment `
+   -ResourceGroupName $rgName `
+   -TemplateFile $HOME/06/az104-06-vms-loop-template.json `
+   -TemplateParameterFile $HOME/06/az104-06-vms-loop-parameters.json `
+
+
